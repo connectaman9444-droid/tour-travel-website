@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Expense Dashboard</h1>
+
+    <div class="add-transaction">
+    <input type="text" id="title" placeholder="Transaction Title">
+    <input type="number" id="amount" placeholder="Amount">
+    <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+    <button id="addBtn">Add</button>
+</div>
+
+<div class="summary">
+    <div>Total Income: ₹<span id="income">0</span></div>
+    <div>Total Expense: ₹<span id="expense">0</span></div>
+    <div>Balance: ₹<span id="balance">0</span></div>
+</div>
+
+<div class="history">
+    <h2>Transaction History</h2>
+    <ul id="list"></ul>
+</div>
+<canvas id="expenseChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
